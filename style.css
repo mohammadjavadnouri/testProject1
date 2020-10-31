@@ -1,0 +1,285 @@
+@font-face {
+  font-family: Vazir;
+  src: url("./fonts/CollectionPersianWebFont/vazir-font-v18.0.0/Vazir.ttf")
+      format("woff2"),
+    url("./fonts/CollectionPersianWebFont/vazir-font-v18.0.0/Vazir.ttf")
+      format("woff"),
+    url("./fonts/CollectionPersianWebFont/vazir-font-v18.0.0/Vazir.ttf")
+      format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Vazir;
+}
+
+.all {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+/* Header ********************************* */
+
+.headerSyle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navClass {
+  text-align: center;
+
+  justify-content: space-between;
+}
+
+.navClass a {
+  border: none;
+  border-bottom: solid #ffffff;
+  transition: 1s;
+  transition-timing-function: ease;
+  vertical-align: middle;
+  margin: 1vw;
+}
+
+.navClass a:hover {
+  border-bottom: solid #0051ff;
+  color: blue;
+  cursor: pointer;
+}
+
+.navClass .icon {
+  display: none;
+}
+
+@media screen and (max-width: 648px) {
+  .navClass a {
+    display: none;
+  }
+  .navClass a.icon {
+    float: center;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .navClass.responsive {
+    position: relative;
+  }
+  .navClass.responsive .icon {
+    position: center;
+    right: 0;
+    top: 0;
+  }
+  .navClass.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.headerSingleBtn {
+  color: blue;
+  background-color: lightblue;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+.headerSingleBtn:hover {
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+}
+
+/* second Row********************************* */
+
+.secondRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+/*
+.secondRowContent {
+  background-color: unset;
+}
+*/
+
+.secondRowContent2 {
+  display: flex;
+}
+
+.secondRowBtns {
+  border-radius: 5px;
+  border-color: blue;
+  border-width: 1px;
+  color: blue;
+  margin: 2px;
+  padding: 10px 25px;
+  background-color: white;
+}
+
+.secondRowBtns:hover {
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+}
+
+.secondRowImages {
+  background-image: url("./assets/Path 15701.svg"),
+    url("./assets/doctor_two_color.svg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  transition: 0.5s;
+  transition-timing-function: ease;
+  padding: 10vw;
+  align-items: center;
+}
+
+.secondRowImages:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotate(-3deg);
+}
+
+/* third Row********************************* */
+.thirdRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+}
+
+.thirdRowImages {
+  align-items: center;
+  background-image: url("./assets/Group 5534.svg"),
+    url("./assets/Mask Group 29.svg"), url("./assets/Card Bacground.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 15vw;
+  transition: 0.5s;
+  transition-timing-function: ease;
+  margin-left: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.thirdRowImages:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotate(3deg);
+}
+
+.thirdRowInnerContent1 {
+  color: blue;
+  border-right: solid green;
+  text-indent: 10px;
+}
+
+/*
+.thirdRowContent {
+  align-items: center;
+  justify-content: center;
+}
+
+.thirdRowContent1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+*/
+.thirdRowContent2 {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  padding-top: 5vw;
+}
+
+.fourthRowContent2 p {
+  margin: 0%;
+  align-self: center;
+  justify-self: center;
+}
+
+/* Fourth Row********************************* */
+.fourthRow {
+  margin: 10px;
+}
+.fourthRowHeader {
+  color: blue;
+  border-right: solid green;
+  text-indent: 10px;
+}
+
+.fourthRowContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+}
+
+.fourthRowContent1 {
+  padding: 1vw;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+/* Fifth Row********************************* */
+.fifthRow {
+  align-items: center;
+  background-color: blue;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.fifthRowImage {
+  background-image: unset;
+}
+
+/* Sixth Row********************************* */
+.sixthRowContent {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.sixthRowContent1 {
+  align-self: center;
+}
+
+.sixthRowImage {
+  align-self: center;
+  text-align: left;
+  padding: 1vw;
+  object-fit: cover;
+}
+
+/* Seventh Row********************************* */
+.seventhRowContent {
+  background-color: blue;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: space-between;
+}
+
+.seventhRowContent1 {
+  display: flex;
+  color: white;
+  white-space: nowrap;
+  align-self: center;
+  justify-self: right;
+  text-indent: 5px;
+  margin: 10px;
+}
+.seventhRowImage {
+  align-self: center;
+  text-align: left;
+  margin: 10px;
+}
+
+/* Footer *************************** */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+}
