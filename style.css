@@ -93,17 +93,12 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
-/*
-.secondRowContent {
-  background-color: unset;
-}
-*/
 
-.secondRowContent2 {
-  display: flex;
+.secondRowText {
+  align-self: center;
 }
 
-.secondRowBtns {
+.secondRow button {
   border-radius: 5px;
   border-color: blue;
   border-width: 1px;
@@ -113,24 +108,23 @@
   background-color: white;
 }
 
-.secondRowBtns:hover {
+.secondRow button:hover {
   cursor: pointer;
   background-color: blue;
   color: white;
 }
 
-.secondRowImages {
-  background-image: url("./assets/Path 15701.svg"),
-    url("./assets/doctor_two_color.svg");
+.secondRow img {
   background-repeat: no-repeat;
-  object-fit: cover;
+  object-fit: scale-down;
   transition: 0.5s;
   transition-timing-function: ease;
-  padding: 10vw;
+  width: 100%;
+  height: auto;
   align-items: center;
 }
 
-.secondRowImages:hover {
+.secondRow img:hover {
   cursor: pointer;
   transform: scale(1.1) rotate(-3deg);
 }
@@ -148,15 +142,15 @@
     url("./assets/Mask Group 29.svg"), url("./assets/Card Bacground.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: inherit;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   text-align: center;
   padding: 15vw;
   transition: 0.5s;
   transition-timing-function: ease;
-  margin-left: 2em;
-  margin-top: 2em;
-  margin-bottom: 2em;
 }
 
 .thirdRowImages:hover {
@@ -190,13 +184,27 @@
   padding-top: 5vw;
 }
 
+.thirdRow figure {
+  border: 0;
+  margin: 0;
+}
+
+.thirdRow i {
+  font-size: 3vw;
+  color: blue;
+}
+
+.thirdRow figcaption {
+  padding-top: 2vw;
+}
+
+/* Fourth Row********************************* */
 .fourthRowContent2 p {
   margin: 0%;
   align-self: center;
   justify-self: center;
 }
 
-/* Fourth Row********************************* */
 .fourthRow {
   margin: 10px;
 }
@@ -216,6 +224,25 @@
   padding: 1vw;
   justify-content: space-between;
   white-space: nowrap;
+}
+
+.fourthRow figcaption {
+  padding-top: 2vw;
+}
+
+.fourthRow figure {
+  margin: 2.5vw;
+}
+
+.fourthRow i {
+  font-size: 3vw;
+  color: gray;
+}
+
+.fourthRow i:hover {
+  cursor: pointer;
+  font-size: 3vw;
+  color: blue;
 }
 
 /* Fifth Row********************************* */
