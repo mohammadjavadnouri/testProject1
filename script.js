@@ -1,4 +1,4 @@
-function myFunction() {
+function respMenuFunc() {
     var x = document.getElementById("headerTopnav");
     if (x.className === "navClass") {
         x.className += " responsive";
