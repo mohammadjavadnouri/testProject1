@@ -116,11 +116,14 @@
   align-self: center;
 }
 
+.secondRow h2 {
+  color: rgb(23, 148, 254);
+}
 .secondRow button {
   border-radius: 5px;
-  border-color: blue;
+  border-color: rgb(23, 148, 254);
   border-width: 1px;
-  color: blue;
+  color: rgb(23, 148, 254);
   margin: 2px;
   padding: 10px 25px;
   background-color: white;
@@ -128,7 +131,7 @@
 
 .secondRow button:hover {
   cursor: pointer;
-  background-color: blue;
+  background-color: rgb(23, 148, 254);
   color: white;
 }
 
@@ -177,7 +180,7 @@
 }
 
 .thirdRowInnerContent1 {
-  color: blue;
+  color: rgb(23, 148, 254);
   border-right: solid green;
   text-indent: 10px;
 }
@@ -232,7 +235,7 @@
   margin: 10px;
 }
 .fourthRowHeader {
-  color: blue;
+  color: rgb(23, 148, 254);
   border-right: solid green;
   text-indent: 10px;
 }
@@ -296,8 +299,9 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.sixthRowContent1 {
-  align-self: center;
+.sixthRow h1 {
+  color: rgb(23, 148, 254);
+  border-right: solid green;
 }
 
 .sixthRow img {
