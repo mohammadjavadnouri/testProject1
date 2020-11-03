@@ -14,8 +14,11 @@
 }
 
 .all {
-  padding-left: 15vw;
-  padding-right: 15vw;
+  display: grid;
+  grid-template-rows: auto;
+  gap: 2vw;
+  padding-left: 12vw;
+  padding-right: 12vw;
 }
 
 /* Header ********************************* */
@@ -263,17 +266,16 @@
 /* Fifth Row********************************* */
 .fifthRow {
   align-items: center;
-  background-color: blue;
+  background-color: rgb(1, 137, 255);
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .fifthRow img {
-  align-self: center;
-  justify-self: center;
-  width: 100%;
-  height: auto;
+  align-self: auto;
+  justify-self: auto;
+  border-radius: 30px;
 }
 
 /* Sixth Row********************************* */
@@ -296,7 +298,7 @@
 
 /* Seventh Row********************************* */
 .seventhRow {
-  background-color: blue;
+  background-color: rgb(23, 148, 254);
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
