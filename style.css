@@ -264,16 +264,32 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.fifthRow div div img {
-  background-color: blue;
-  width: 5vw;
-  height: 2vw;
-  margin: 1vw;
+.fifthRow div {
+  margin: 10px;
+  color: white;
 }
-.fifthRow img {
+
+.fifthRowIcons {
+  display: flex;
+  width: 65%;
+  flex-flow: nowrap;
+}
+
+.fifthRowIcons img {
+  width: 50%;
+  margin: 5px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.fifthRowImage {
   align-self: auto;
   justify-self: auto;
-  border-radius: 30px;
+  border-radius: 90px;
+  margin: 1vw;
+  padding: 2rem;
+  width: 100%;
+  height: auto;
 }
 
 /* Sixth Row********************************* */
