@@ -263,12 +263,14 @@
   padding: 15px;
   font-size: 3em;
   color: gray;
+  transition: 0.5s ease;
 }
 
 .fourthRow i:hover {
   font-size: 3em;
   cursor: pointer;
   color: blue;
+  box-shadow: 1px 1px 10px 1px blue;
 }
 
 /* Fifth Row********************************* */
@@ -289,6 +291,37 @@
   display: flex;
   width: 55%;
   flex-flow: nowrap;
+}
+
+.fifthRow form {
+  position: relative;
+}
+
+.fifthRow input {
+  width: 70%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.fifthRow button {
+  position: absolute;
+  right: 17em;
+  top: 9px;
+  border: none;
+  height: 15px;
+  width: 14%;
+  border-radius: 8px;
+  background-color: rgb(23, 148, 254);
+  font-weight: bold;
+}
+
+.fifthRow button:hover {
+  cursor: pointer;
+}
+
+.fifthRowIcons:hover {
+  cursor: pointer;
 }
 
 .fifthRowIcons img {
