@@ -21,6 +21,17 @@
   padding-right: 12vw;
 }
 
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 125%;
+  } /*20px*/
+}
+
+@media screen and (max-width: 648px) {
+  html {
+    font-size: 70%;
+  }
+}
 /* Header ********************************* */
 
 .navClass {
@@ -245,13 +256,13 @@
 }
 
 .fourthRow i {
-  font-size: 3vw;
+  font-size: 3em;
   color: gray;
 }
 
 .fourthRow i:hover {
+  font-size: 3em;
   cursor: pointer;
-  font-size: 3vw;
   color: blue;
 }
 
@@ -337,13 +348,11 @@
 }
 
 .footer i {
-  font-size: 30px;
   color: blue;
 }
 
 .footer div div div a {
   margin: 0.5rem;
-  font-size: 2rem;
   text-decoration: none;
 }
 
