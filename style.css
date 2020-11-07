@@ -298,7 +298,8 @@
 }
 
 .fifthRow input {
-  width: 70%;
+  width: 100%;
+  height: 3em;
   border-radius: 8px;
   border: none;
   outline: none;
@@ -306,14 +307,15 @@
 
 .fifthRow button {
   position: absolute;
-  right: 17em;
-  top: 9px;
+  left: 5px;
+  top: 0.5em;
   border: none;
-  height: 15px;
-  width: 14%;
+  height: 2em;
+  width: 6em;
   border-radius: 8px;
   background-color: rgb(23, 148, 254);
   font-weight: bold;
+  color: white;
 }
 
 .fifthRow button:hover {
@@ -355,6 +357,7 @@
 
 /* Sixth Row********************************* */
 .sixthRow {
+  place-items: center;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -363,6 +366,31 @@
 .sixthRow h1 {
   color: rgb(23, 148, 254);
   border-right: solid green;
+}
+
+.sixthRow form {
+  position: relative;
+}
+
+.sixthRow input {
+  width: 100%;
+  height: 3em;
+  border-radius: 8px;
+  outline: none;
+  border: solid rgb(219, 219, 219);
+}
+
+.sixthRow button {
+  position: absolute;
+  left: 5px;
+  top: 0.5em;
+  border: none;
+  height: 2em;
+  width: 9em;
+  border-radius: 8px;
+  background-color: rgb(23, 148, 254);
+  font-weight: bold;
+  color: white;
 }
 
 .sixthRow img {
