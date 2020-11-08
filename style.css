@@ -17,14 +17,14 @@
   display: grid;
   grid-template-rows: auto;
   gap: 2vw;
-  padding-left: 12vw;
-  padding-right: 12vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 @media screen and (min-width: 1400px) {
   html {
-    font-size: 125%;
-  } /*20px*/
+    font-size: 115%;
+  }
 }
 
 @media screen and (max-width: 648px) {
@@ -34,17 +34,17 @@
 }
 /* Header ********************************* */
 
-.navClass {
+.nav {
   display: flex;
   text-align: right;
   justify-content: space-between;
 }
-.navClass img {
+.nav__image {
   width: auto;
   height: auto;
 }
 
-.navClass a {
+.nav a {
   border: none;
   border-bottom: solid #ffffff;
   text-decoration: none;
@@ -55,53 +55,53 @@
   white-space: nowrap;
 }
 
-.navClass a:hover {
+.nav a:hover {
   border-bottom: solid rgb(23, 148, 254);
   color: rgb(23, 148, 254);
   cursor: pointer;
 }
 
-.navClass .icon {
+.nav__icon {
   display: none;
 }
 
 @media screen and (max-width: 648px) {
-  .navClass {
+  .nav {
     display: inline;
   }
-  .navClass a {
+  .nav a {
     display: none;
   }
-  .navClass a.icon {
+  .nav a.nav__icon {
     float: none;
     display: block;
   }
-  .navClass button {
+  .nav__button {
     display: none;
   }
 }
 
 @media screen and (max-width: 648px) {
-  .navClass.responsive {
+  .nav.responsive {
     position: relative;
   }
-  .navClass.responsive .icon {
+  .nav.responsive .nav__icon {
     position: center;
     color: red;
   }
-  .navClass.responsive a {
+  .nav.responsive a {
     float: none;
     display: block;
     text-align: right;
   }
-  .navClass.responsive button {
+  .nav.responsive .nav__button {
     width: 50%;
     height: auto;
     display: block;
   }
 }
 
-.navClass button {
+.nav__button {
   color: rgb(23, 148, 254);
   background-color: lightblue;
   border: none;
@@ -111,7 +111,7 @@
   height: auto;
 }
 
-.navClass button:hover {
+.nav__button:hover {
   background-color: rgb(23, 148, 254);
   cursor: pointer;
   color: white;
@@ -119,20 +119,20 @@
 
 /* second Row********************************* */
 
-.secondRow {
+.second {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
-.secondRowText {
+.second__right {
   align-self: center;
 }
 
-.secondRow h2 {
+.second__title {
   color: rgb(23, 148, 254);
 }
-.secondRow button {
+.second__button {
   border-radius: 5px;
   border-color: rgb(23, 148, 254);
   border-width: 1px;
@@ -142,13 +142,13 @@
   background-color: white;
 }
 
-.secondRow button:hover {
+.second__button:hover {
   cursor: pointer;
   background-color: rgb(23, 148, 254);
   color: white;
 }
 
-.secondRow img {
+.second__image {
   background-repeat: no-repeat;
   object-fit: scale-down;
   transition: 0.5s;
@@ -158,19 +158,19 @@
   align-items: center;
 }
 
-.secondRow img:hover {
+.second__image:hover {
   cursor: pointer;
   transform: scale(1.1) rotate(-3deg);
 }
 
 /* third Row********************************* */
-.thirdRow {
+.third {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
 }
 
-.thirdRow img {
+.third__image {
   background-repeat: no-repeat;
   padding: 2rem;
   width: 100%;
@@ -179,18 +179,18 @@
   transition-timing-function: ease;
 }
 
-.thirdRow img:hover {
+.third__image:hover {
   cursor: pointer;
   transform: scale(1.1) rotate(3deg);
 }
 
-.thirdRowInnerContent1 {
+.third__title {
   color: rgb(23, 148, 254);
   border-right: solid green;
   text-indent: 10px;
 }
 
-.thirdRowContent2 {
+.third__lower {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -198,12 +198,16 @@
   padding-top: 5vw;
 }
 
-.thirdRow figure {
+.third__figure {
   border: 0;
   margin: 0;
 }
 
-.thirdRowContent2 img {
+.third__figcaption {
+  padding-top: 1.5vw;
+}
+
+.third__lowerimage {
   border-radius: 5px;
   box-shadow: 1px 1px 10px 1px rgb(170, 215, 255);
   padding: 10px;
@@ -211,53 +215,39 @@
   height: 3rem;
 }
 
-.thirdRow i {
-  color: blue;
-}
-
-.thirdRow figcaption {
-  padding-top: 2vw;
-}
-
 /* Fourth Row********************************* */
-.fourthRowContent2 p {
-  margin: 0%;
-  align-self: center;
-  justify-self: center;
-}
-
-.fourthRow {
+.fourth {
   margin: 10px;
 }
-.fourthRowHeader {
+.fourth__Header {
   color: rgb(23, 148, 254);
   border-right: solid green;
   text-indent: 10px;
 }
 
-.fourthRowContent {
+.fourth__Content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: space-between;
 }
 
-.fourthRowContent1 {
+.fourth__table {
   padding: 1vw;
   justify-content: space-between;
   white-space: nowrap;
 }
 
-.fourthRow figcaption {
-  padding-top: 2vw;
-  justify-self: center;
-}
-
-.fourthRow figure {
+.fourth__figure {
   margin: 2.5vw;
   justify-self: center;
 }
 
-.fourthRow i {
+.fourth__figcaption {
+  padding-top: 2vw;
+  justify-self: center;
+}
+
+.fourth i {
   border-radius: 5px;
   box-shadow: 1px 1px 10px 1px rgb(170, 215, 255);
   padding: 15px;
@@ -266,15 +256,21 @@
   transition: 0.5s ease;
 }
 
-.fourthRow i:hover {
+.fourth i:hover {
   font-size: 3em;
   cursor: pointer;
   color: blue;
   box-shadow: 1px 1px 10px 1px blue;
 }
 
+.fourth__left p {
+  margin: 0%;
+  align-self: center;
+  justify-self: center;
+}
+
 /* Fifth Row********************************* */
-.fifthRow {
+.fifth {
   place-items: center;
   background-color: rgb(1, 137, 255);
   display: grid;
@@ -282,22 +278,16 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.fifthRow div {
+.fifth__text {
   margin: 10px;
   color: white;
 }
 
-.fifthRowIcons {
-  display: flex;
-  width: 55%;
-  flex-flow: nowrap;
-}
-
-.fifthRow form {
+.fifth form {
   position: relative;
 }
 
-.fifthRow input {
+.fifth input {
   width: 100%;
   height: 3em;
   border-radius: 8px;
@@ -305,7 +295,7 @@
   outline: none;
 }
 
-.fifthRow button {
+.fifth button {
   position: absolute;
   left: 5px;
   top: 0.5em;
@@ -318,22 +308,28 @@
   color: white;
 }
 
-.fifthRow button:hover {
+.fifth button:hover {
   cursor: pointer;
 }
 
-.fifthRowIcons:hover {
+.fifth__storeicons {
+  display: flex;
+  width: 55%;
+  flex-flow: nowrap;
+}
+
+.fifth__storeicons:hover {
   cursor: pointer;
 }
 
-.fifthRowIcons img {
+.fifth__storeicons img {
   width: 50%;
   margin: 5px;
   height: auto;
   border-radius: 1vw;
 }
 
-.fifthRowImage {
+.fifth__leftimage {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   width: 100%;
@@ -342,45 +338,45 @@
 }
 
 @media screen and (min-width: 900px) {
-  .fifthRowImage {
+  .fifth__leftimage {
     width: 300px;
     height: auto;
   }
 }
 
 @media screen and (max-width: 648px) {
-  .fifthRowImage {
+  .fifth__leftimage {
     width: 200px;
     height: auto;
   }
 }
 
 /* Sixth Row********************************* */
-.sixthRow {
+.sixth {
   place-items: center;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.sixthRow h1 {
+.sixth h1 {
   color: rgb(23, 148, 254);
   border-right: solid green;
 }
 
-.sixthRow form {
+.sixth form {
   position: relative;
 }
 
-.sixthRow input {
+.sixth input {
   width: 100%;
   height: 3em;
   border-radius: 8px;
   outline: none;
-  border: solid rgb(219, 219, 219);
+  border: solid rgb(238, 237, 237);
 }
 
-.sixthRow button {
+.sixth button {
   position: absolute;
   left: 5px;
   top: 0.5em;
@@ -393,13 +389,13 @@
   color: white;
 }
 
-.sixthRow img {
+.sixth img {
   width: 100%;
   height: auto;
 }
 
 /* Seventh Row********************************* */
-.seventhRow {
+.seventh {
   background-color: rgb(23, 148, 254);
   display: grid;
   gap: 20px;
@@ -408,11 +404,11 @@
   align-items: center;
 }
 
-.seventhRow p,
-.seventhRow h2 {
+.seventh p,
+.seventh h2 {
   color: white;
 }
-.seventhRow img {
+.seventh img {
   width: 100%;
   height: auto;
 }
@@ -432,7 +428,7 @@
   place-content: center;
 }
 
-.footerIconImages {
+.footer__storeimages {
   width: auto;
   height: 2rem;
   border-radius: 5px;

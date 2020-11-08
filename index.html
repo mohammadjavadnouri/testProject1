@@ -10,12 +10,12 @@
 </head>
 <body>
 	<section class="all">
-		<header class="navClass" id="headerTopnav">
+		<header class="nav" id="headerTopnav">
 			<div>
-				<img src="./assets/Group 152.svg" alt="header small mark">
+				<img src="./assets/Group 152.svg" alt="header small mark" class="nav__image">
 			</div>
 			<div>
-				<a href="javascript:void(0);" class="icon" onclick="respMenuFunc()">
+				<a href="javascript:void(0);" class="nav__icon" onclick="respMenuFunc()">
 					<i class="fa fa-bars icon-default"></i>
 				</a>
 				<a href="#home">صفحه اصلی</a>
@@ -24,58 +24,58 @@
 				<a href="#join">عضویت داروخانه ها</a>
 			</div>
 			<div>
-				<button>دانلود درمانیتو</button>
+				<button class="nav__button">دانلود درمانیتو</button>
 			</div>
 		</header>
 
-		<div class="secondRow">
-			<div class="secondRowText">
+		<div class="second">
+			<div class="second__right">
 				<div>
-					<h2>اپلیکیشن درمانیتو</h2>
+					<h2 class="second__title">اپلیکیشن درمانیتو</h2>
 					<p>درمانیتو سامانه هوشمنددرمان و سلامت</p>
 				</div>
 				<div>
-					<button>دانلود درمانیتو</button>
-					<button>عضویت داروخانه ها</button>
+					<button class="second__button">دانلود درمانیتو</button>
+					<button class="second__button">عضویت داروخانه ها</button>
 				</div>
 			</div>
-			<div >
-				<img src="./assets/doctor_two_color.svg">
+			<div>
+				<img src="./assets/doctor_two_color.svg" class="second__image">
 			</div>
 		</div>
 		
-		<div class="thirdRow">
+		<div class="third">
 			<a href=#>
-				<img src="./assets/third-row image play and dr together.png">
+				<img src="./assets/third-row image play and dr together.png" class="third__image">
 			</a>
-			<div class="thirdRowContent">
-				<div class="thirdRowContent1">
-					<h3  class="thirdRowInnerContent1" >درباره درمانیتو</h3>
+			<div>
+				<div>
+					<h3 class="third__title" >درباره درمانیتو</h3>
 					<p>درمانیتو یک سامانه است که امکان سفارش دارو، محصولات آرایشی بهداشتی نوبت گیری و مشاوره پزشکان را به راحتی و بصورت آنلاین فراهم کرده است.</p>
 				</div>
-				<div class="thirdRowContent2">
-					<figure ><img src="./assets/icons/fast-search.svg"><figcaption >جستجو سریع</figcaption></figure>
-					<figure ><img src="./assets/icons/efficent.svg"><figcaption >به صرفه</figcaption></figure>
-					<figure ><img src="./assets/icons/easy.svg"><figcaption >راحت</figcaption></figure>
-					<figure ><img src="./assets/icons/search.svg"></i><figcaption >دقیق</figcaption></figure>
+				<div class="third__lower">
+					<figure class="third__figure"><img src="./assets/icons/fast-search.svg" class="third__lowerimage"><figcaption class="third__figcaption">جستجو سریع</figcaption></figure>
+					<figure class="third__figure"><img src="./assets/icons/efficent.svg" class="third__lowerimage"><figcaption class="third__figcaption">به صرفه</figcaption></figure>
+					<figure class="third__figure"><img src="./assets/icons/easy.svg" class="third__lowerimage"><figcaption class="third__figcaption">راحت</figcaption></figure>
+					<figure class="third__figure"><img src="./assets/icons/search.svg" class="third__lowerimage"></i><figcaption class="third__figcaption">دقیق</figcaption></figure>
 				</div>
 			</div>
 		</div>
 
-		<div class="fourthRow">
-			<header class="fourthRowHeader"><h3>امکانات درمانیتو</h3></header>
-			<div class="fourthRowContent"> 
-				<table class="fourthRowContent1">
+		<div class="fourth">
+			<header class="fourth__Header"><h3>امکانات درمانیتو</h3></header>
+			<div class="fourth__Content"> 
+				<table class="fourth__table">
 					<tr>
-						<td><figure ><i class="fa fa-tty" ></i><figcaption >داروخانه</figcaption></figure></td>
-						<td><figure ><i class="fa fa-medkit" ></i><figcaption >فروشگاه</figcaption></figure></td>
+						<td><figure class="fourth__figure"><i class="fa fa-tty" ></i><figcaption class="fourth__figcaption" >داروخانه</figcaption></figure></td>
+						<td><figure class="fourth__figure"><i class="fa fa-medkit" ></i><figcaption  class="fourth__figcaption">فروشگاه</figcaption></figure></td>
 					</tr>
 					<tr>
-						<td><figure ><i class="fa fa-stethoscope" ></i><figcaption >ویزیت آنلاین</figcaption></figure></td>
-						<td><figure ><i class="fa fa-child" ></i><figcaption >نوبت آنلاین</figcaption></figure></td>
+						<td><figure class="fourth__figure"><i class="fa fa-stethoscope" ></i><figcaption class="fourth__figcaption">ویزیت آنلاین</figcaption></figure></td>
+						<td><figure class="fourth__figure"><i class="fa fa-child" ></i><figcaption class="fourth__figcaption">نوبت آنلاین</figcaption></figure></td>
 					</tr>
 				</table>
-				<div class="fourthRowContent2">
+				<div class="fourth__left">
 					<header><h4>داروخانه آنلاین</h4></header>
 					<div><p>در سرویس داروخانه شما میتوانید نسخه دارویی یا محصول بهداشتی خودتون رو برای پیدا شدن به داروخانه و فروشگاه ها سفارش بدید. </p></div>
 					<div>
@@ -91,27 +91,27 @@
 		</div>
 
 
-		<div class="fifthRow">
-			<div>
+		<div class="fifth">
+			<div class="fifth__text">
 				<h1>دانلود اپلیکیشن درمانیتو</h1>
 				<p>برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.</p>
 				<form>
 					<input placeholder="09xx xxx xx xx شماره موبایل خود را وارد کنید">
 					<button type="submit">بفرست</button>
 				</form>
-				<div class="fifthRowIcons">
+				<div class="fifth__storeicons">
 					<img src="assets/android blue button.png">
 					<img src="./assets/bazar blue button.png">
 					<img src="./assets/sibapp blue button.png">
 				</div>
 			</div>
 			<div>
-				<img src="./assets/Mask Group 32.png"  class="fifthRowImage" >
+				<img src="./assets/Mask Group 32.png"  class="fifth__leftimage" >
 			</div>
 		</div>
 
 
-		<div class="sixthRow">
+		<div class="sixth">
 			<div>
 				<h1>عضویت داروخانه یا مراکز درمانی</h1>
 				<p>اگر به عنوان داروخانه یا مرکز درمانی قصد دارید در روند درمان و کسب کار خودتان تغییری ایجاد کنید درمانیتو منتظر شماست</p>
@@ -126,7 +126,7 @@
 			</div>
 		</div>
 
-		<div class="seventhRow">
+		<div class="seventh">
 			<div>
 				<h2>پشتیبانی در مانیتو</h2>
 				<p>پاسخگویی در روزهای کاری از 9 صبح تا 9 شب</p>
@@ -169,8 +169,8 @@
 			</div>
 			<div>
 				<h4>دانلود درمانیتو</h4>
-				<a href="#" ><img class="footerIconImages" src="./assets/bazzar black icon.png"></a>
-				<a href="#" ><img class="footerIconImages" src="./assets/sibapp black icon.png"></a>
+				<a href="#" ><img class="footer__storeimages" src="./assets/bazzar black icon.png"></a>
+				<a href="#" ><img class="footer__storeimages" src="./assets/sibapp black icon.png"></a>
 			</div>
 		</footer>
 	</section>
